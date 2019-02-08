@@ -1,0 +1,42 @@
+:host {
+  /* Applies if the host is a <bb-red-strawberry> element.*/
+  font-weight: bold;
+  display: block;
+  width: 320px;
+  height: 320px;
+  background-color: var(--background-color, #fff);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  margin-bottom: 6%;
+  border-radius: 2px;
+}
+
+h4{
+  margin: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+}
+
+.shadow__image {
+  width:320px;
+  height: 220px;
+  contain: cover;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.shadow__info {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  padding: 4%;
+  color: var(--color, #4a4a4a);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.shadow__title {
+  font-size: 1em;
+}
+
+.shadow__description {
+  font-size: 0.7em;
+}

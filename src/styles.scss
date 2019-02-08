@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font: 300 15px/1.4 Helvetica,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  color: gray;
+}
+
+img {
+  vertical-align: bottom;
+}
+img a {
+  border: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: rgb(201,60,77);
+  text-decoration: none;
+}
+input,
+button {
+  outline: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+}
+h2{
+  font-size: 40px;
+  font-family: 'montserrat', sans-serif;
+  color: #fff;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  font-family: Lato, sans-serif;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 20px 0 0 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+  border: none;
+  background: #fff;
+  font-size: 12px;
+  padding: 6px 30px 6px 10px;
+  border-radius: 2px;
+  margin-bottom: 6px;
+  display: flex;
+  width: 18em;
+}
+input[type=checkbox] {
+  width: 20px;
+  height: 21px;
+  border: 0px ;
+  background: #FFF;
+}
+
+input[type=checkbox]:checked {
+  width: 20px;
+  height: 21px;
+  border: 0px ;
+  background-color: #FFF;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select{
+  border: none;
+  font-size: 12px;
+  height: 28px;
+  padding: 6px 30px 6px 10px;
+  border-radius: 0;
+  margin: 4px;
+  display: flex;
+  width: 18em;
+}
+
+
+
