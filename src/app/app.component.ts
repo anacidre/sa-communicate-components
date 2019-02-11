@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'sa-root',
   template: `
 <sa-dashboard></sa-dashboard>
-
   `,
   styleUrls: ['./app.component.scss']
 })
