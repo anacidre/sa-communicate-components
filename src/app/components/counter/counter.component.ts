@@ -10,8 +10,9 @@ import { Berry } from '../../models/berries.model';
   selector: 'sa-counter',
   template: `
   <div class="counter">
-  <sa-button text="Add to basket" (click)="saFunction()" style="--padding:5px; --font-size: 14px;"></sa-button>
+  <sa-button text="Add to basket" (click)="increment()" style="--padding:5px; --font-size: 14px;"></sa-button>
   <p>Added: {{ counter }}<span> {{ berry.title }}</span></p>
+  <sa-button text="Remove" (click)="remove()" style="--padding:5px; --font-size: 14px;"></sa-button>
   </div>
   `,
   styleUrls: ['./counter.component.scss']
@@ -27,7 +28,10 @@ export class CounterComponent implements OnInit {
     console.log(SAButton);
   }
 
-  saFunction() {
+  increment() {
     this.counter = this.counter + 1;
+  }
+  remove(){
+    this.counter = 0;
   }
 }
