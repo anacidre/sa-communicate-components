@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import * as SAButton from '../../../web-components/sa-button/sa-button.js';
+import * as shaButton from '../../../web-components/sa-button/sha-btn.js'
+
 
 import { Berry } from '../../models/berries.model';
 
@@ -10,9 +13,7 @@ import { Berry } from '../../models/berries.model';
       <h3 name='title' id='title' role='header' class='shadow__title'>{{ berry.title }}</h3>
       <p name='description' id='description' class='shadow__description'>{{ berry.description }}</p>
   </div>
-
-  <button>Add to cart</button>
-
+  <sa-button text="Add to basket" (click)="saFunction()" style="--padding:5px; --font-size: 14px;"></sa-button>
   `,
   styleUrls: ['./card.component.scss']
 })
@@ -23,6 +24,11 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(SAButton);
+  }
+
+  saFunction(){
+    alert('Consider done!');
   }
 
 }
