@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as SAButton from '../../../web-components/sa-button/sa-button.js';
-import * as shaButton from '../../../web-components/sa-button/sha-btn.js'
+import * as shaButton from '../../../web-components/sa-button/sa-button.js';
 
 
 import { Berry } from '../../models/berries.model';
@@ -27,8 +27,8 @@ export class CardComponent implements OnInit {
     console.log(SAButton);
   }
 
-  saFunction(){
-    alert('Consider done!');
+  saFunction() {
+    alert('Consider it added!');
   }
 
 }
